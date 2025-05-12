@@ -1,0 +1,15 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+  },
+    "routes": [
+    {
+      "route": "/bakery/*",
+      "serve": "/bakery/index.html"
+    }
+  ],
+   "mimeTypes": {
+    ".json": "text/javascript"
+    }
+}
