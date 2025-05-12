@@ -1,21 +1,14 @@
 {
-  "routes": [
-    {
-      "route": "/bakery",
-      "rewrite": "/index.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/bakery/*",
-      "rewrite": "/index.html",
-      "allowedRoles": ["anonymous"]
-    }
-  ],
   "navigationFallback": {
     "rewrite": "/index.html"
   },
-  "globalHeaders": {
-    "cache-control": "no-store, must-revalidate"
-  },
-  "trailingSlash": "auto"
+  "routes": [
+    {
+      "route": "/bakery/*",
+      "serve": "/index.html"
+    }
+  ],
+  "mimeTypes": {
+    ".json": "application/json"
+  }
 }
